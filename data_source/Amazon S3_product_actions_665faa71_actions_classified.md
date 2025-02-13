@@ -1,0 +1,64 @@
+```json
+[
+  {
+    "action_iam": "AbortMultipartUpload",
+    "build": true,
+    "run": false,
+    "descricao": "Aborta um upload multipart em curso, interrompendo a criação parcial de um objeto em um bucket do S3."
+  },
+  {
+    "action_iam": "CreateBucket",
+    "build": true,
+    "run": false,
+    "descricao": "Cria um novo bucket no Amazon S3."
+  },
+  {
+    "action_iam": "DeleteBucket",
+    "build": true,
+    "run": false,
+    "descricao": "Exclui um bucket no Amazon S3."
+  },
+  {
+    "action_iam": "GetObject",
+    "build": false,
+    "run": true,
+    "descricao": "Obtém um objeto de um bucket do Amazon S3."
+  },
+  {
+    "action_iam": "ListBucket",
+    "build": false,
+    "run": true,
+    "descricao": "Lista alguns ou todos os objetos em um bucket do Amazon S3."
+  },
+  {
+    "action_iam": "PutObject",
+    "build": true,
+    "run": false,
+    "descricao": "Adiciona um objeto a um bucket do Amazon S3."
+  },
+  {
+    "action_iam": "DeleteObject",
+    "build": true,
+    "run": false,
+    "descricao": "Remove a versão nula de um objeto e insere um marcador de exclusão, o que se torna a versão atual do objeto."
+  },
+  {
+    "action_iam": "PutBucketVersioning",
+    "build": true,
+    "run": false,
+    "descricao": "Define o estado de controle de versões de um bucket existente no Amazon S3."
+  },
+  {
+    "action_iam": "RestoreObject",
+    "build": true,
+    "run": false,
+    "descricao": "Restaura uma cópia arquivada de um objeto de volta para o Amazon S3."
+  },
+  {
+    "action_iam": "GetBucketPolicy",
+    "build": false,
+    "run": true,
+    "descricao": "Retorna a política de um bucket específico."
+  }
+]
+```
