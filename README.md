@@ -87,11 +87,21 @@ Este projeto é **open-source** e está sob a licença **MIT**.
 
 ---
 
-## 📌 Melhorias Pendentes (TO DO)
+Aqui está o seu TODO atualizado com as novas informações separadas em "Melhorias" e "Bug Fix":  
 
-- [ ] Aprimorar as mensagens exibidas na tela para fornecer feedback claro e detalhado sobre o progresso das operações.
-- [ ] Implementar um módulo de logging que registre eventos e erros em arquivos para auditoria e depuração.
-- [ ] Adicionar uma funcionalidade para contabilizar e exibir a quantidade de tokens consumidos nas interações com a OpenAI API.
-- [ ] Melhorar a robustez do módulo de execução do assistente, garantindo tratamento adequado para diferentes status de erro (exemplo: `RuntimeError: Unexpected run status: failed`).
-- [ ] Criar um sistema de monitoramento de execução que registre o status de cada etapa do processo, permitindo a reexecução seletiva apenas das etapas que falharam.
+Aqui está o seu TODO atualizado com a nova melhoria adicionada:  
 
+## 📌 Melhorias Pendentes (TO DO)  
+
+- [ ] Aprimorar as mensagens exibidas na tela para fornecer feedback claro e detalhado sobre o progresso das operações.  
+- [ ] Implementar um módulo de logging que registre eventos e erros em arquivos para auditoria e depuração.  
+- [ ] Adicionar uma funcionalidade para contabilizar e exibir a quantidade de tokens consumidos nas interações com a OpenAI API.  
+- [ ] Melhorar a robustez do módulo de execução do assistente, garantindo tratamento adequado para diferentes status de erro (exemplo: `RuntimeError: Unexpected run status: failed`).  
+- [ ] Criar um sistema de monitoramento de execução que registre o status de cada etapa do processo, permitindo a reexecução seletiva apenas das etapas que falharam.  
+- [ ] Implementar um mecanismo de segmentação de entrada para dividir grandes quantidades de dados em partes menores e enviá-las em múltiplas requisições à OpenAI API, respeitando o limite de 256.000 caracteres.  
+- [ ] Adicionar a lógica para que cada *action* identificada como *"requer controle"* seja enviada para um assistente que verificará as *conditions* possíveis e determinará se é necessário adicionar alguma *condition* ou outro mecanismo de mitigação.  
+
+## 🐛 Bug Fix  
+
+- [ ] Corrigir o problema ao enviar grandes quantidades de dados para a OpenAI API, garantindo que a entrada respeite o limite de 256.000 caracteres (`BadRequestError: string too long`).  
+- [ ] Analisar e corrigir o problema de classificação incompleta das ações, garantindo que todas as ações sejam devidamente processadas, possivelmente dividindo a lista em partes menores para facilitar a análise do assistente.
