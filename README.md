@@ -84,7 +84,9 @@ O sistema estará disponível em **http://localhost:8501**.
 ---
 
 ## 📜 Licença
+
 Este projeto é **open-source** e está sob a licença **MIT**.
+
 ---
 
 ## 📌 Melhorias Pendentes (TO DO)  
