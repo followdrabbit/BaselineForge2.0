@@ -28,6 +28,10 @@ O **Baseline Forge 2.0** é um sistema automatizado para homologação de servi�
 ├── README.md               # Documentação inicial do projeto
 ```
 
+# Diagrama de Arquitetura da Aplicação
+
+![Diagrama de Arquitetura da Aplicação](diagramas/diagrama_arquitetura_aplicacao.png)
+
 ---
 
 ## 🚀 Instalação e Setup
