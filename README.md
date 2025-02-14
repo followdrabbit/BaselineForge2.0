@@ -80,9 +80,6 @@ O sistema estará disponível em **http://localhost:8501**.
 
 ---
 
-Essa versão reflete com precisão o funcionamento do código enviado. Me avise se precisar de ajustes! 🚀
----
-
 ## 🛠️ Tecnologias Utilizadas
 - **🐍 Python** - Linguagem principal
 - **📊 Streamlit** - Interface interativa
