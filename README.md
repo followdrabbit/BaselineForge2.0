@@ -85,15 +85,7 @@ O sistema estará disponível em **http://localhost:8501**.
 
 ## 📜 Licença
 Este projeto é **open-source** e está sob a licença **MIT**.
-
 ---
-🔥 **Contribuições são bem-vindas!** Qualquer dúvida, entre em contato. 🚀
-
----
-
-Aqui está o seu TODO atualizado com as novas informações separadas em "Melhorias" e "Bug Fix":  
-
-Aqui está o seu TODO atualizado com a nova melhoria adicionada:  
 
 ## 📌 Melhorias Pendentes (TO DO)  
 
