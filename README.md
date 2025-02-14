@@ -65,7 +65,7 @@ O sistema estará disponível em **http://localhost:8501**.
 
 ---
 
-## 📡 **Fluxo de Execução Atualizado**
+## 📡 **Fluxo de Execução **
 
 - 1️⃣ **O usuário insere** o **nome do serviço AWS** e as **URLs de documentação** na interface do **Streamlit** (`main.py`).  
 - 2️⃣ O sistema **realiza scraping** das páginas usando `Requests` para obter o HTML e o converte para **Markdown** com `HTML2Text` (`scraping.py`).  
