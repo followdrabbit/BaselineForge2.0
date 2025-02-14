@@ -66,11 +66,11 @@ O sistema estará disponível em **http://localhost:8501**.
 ---
 
 ## 📡 Fluxo de Execução
-1️⃣ O usuário insere **nome do produto AWS** e URLs de documentação.
-2️⃣ O sistema realiza **scraping** das páginas e converte para Markdown.
-3️⃣ O conteúdo é enviado para a **OpenAI API** para classificação de ações IAM.
-4️⃣ Os dados processados são armazenados em **arquivos JSON e Markdown**.
-5️⃣ O resultado final é exibido na interface e salvo no diretório `data_source/`.
+- 1️⃣ O usuário insere **nome do produto AWS** e URLs de documentação.
+- 2️⃣ O sistema realiza **scraping** das páginas e converte para Markdown.
+- 3️⃣ O conteúdo é enviado para a **OpenAI API** para classificação de ações IAM.
+- 4️⃣ Os dados processados são armazenados em **arquivos JSON e Markdown**.
+- 5️⃣ O resultado final é exibido na interface e salvo no diretório `data_source/`.
 
 ---
 
