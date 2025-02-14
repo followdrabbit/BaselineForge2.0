@@ -65,13 +65,22 @@ O sistema estará disponível em **http://localhost:8501**.
 
 ---
 
-## 📡 Fluxo de Execução
-- 1️⃣ O usuário insere **nome do produto AWS** e URLs de documentação.
-- 2️⃣ O sistema realiza **scraping** das páginas e converte para Markdown.
-- 3️⃣ O conteúdo é enviado para a **OpenAI API** para classificação de ações IAM.
-- 4️⃣ Os dados processados são armazenados em **arquivos JSON e Markdown**.
-- 5️⃣ O resultado final é exibido na interface e salvo no diretório `data_source/`.
+## 📡 **Fluxo de Execução Atualizado**
 
+- 1️⃣ **O usuário insere** o **nome do serviço AWS** e as **URLs de documentação** na interface do **Streamlit** (`main.py`).  
+- 2️⃣ O sistema **realiza scraping** das páginas usando `Requests` para obter o HTML e o converte para **Markdown** com `HTML2Text` (`scraping.py`).  
+   - Os arquivos Markdown resultantes são **salvos no diretório `data_source/`**.  
+- 3️⃣ O conteúdo do Markdown é **lido e enviado para a API da OpenAI** (`AWSIAMCLASSIFIER`) para **classificação das ações IAM** (`openai_assistant.py`).  
+   - A resposta da OpenAI é retornada no formato **texto bruto**.  
+   - O conteúdo classificado é **salvo em arquivos Markdown e JSON** (`etl.py`).  
+- 4️⃣ O JSON resultante é processado e enviado novamente para a OpenAI, desta vez para a **modelagem de ameaças** (`AWSIAMTHREADMODELER`) (`openai_assistant.py`).  
+   - A OpenAI retorna um relatório de modelagem de ameaças baseado nos dados IAM extraídos.  
+   - O relatório é salvo no formato **Markdown** no diretório `data_source/`.  
+- 5️⃣ **O resultado final é exibido na interface do Streamlit** e salvo no diretório `data_source/`, permitindo que o usuário acesse e utilize os arquivos gerados.  
+
+---
+
+Essa versão reflete com precisão o funcionamento do código enviado. Me avise se precisar de ajustes! 🚀
 ---
 
 ## 🛠️ Tecnologias Utilizadas
